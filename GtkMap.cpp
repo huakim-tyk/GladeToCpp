@@ -42,7 +42,7 @@ namespace GtkMap {
 
     static std::string propertyToGtkmm(std::string propety){
         //=================== BOOL PARAMETHER ========================
-        if(propety == "car_focus"){
+        if(propety == "can_focus"){
             return "set_can_focus";
         }
         if(propety == "visible"){
@@ -77,13 +77,13 @@ namespace GtkMap {
         }
         if(propety == "bottom_attach"){
             return "set_margin_bottom";
-        }
+        }/*
         if(propety == "width_request"){
             return "set_size_request";
         }
         if(propety == "width_request"){
             return "height_request";
-        }
+        }*/
         if(propety == "orientation"){
             return "compute_expand";
         }
